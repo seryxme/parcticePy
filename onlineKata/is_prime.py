@@ -1,11 +1,11 @@
-def is_prime(number:int) -> bool:
-    if num <= 1:
+def is_prime(number: int) -> bool:
+    if number <= 1:
         return False
-    elif num == 2 or num == 3:
+    elif number == 2 or number == 3:
         return True
 
-    for factor in range(2, num):
-        if num % factor == 0:
+    for factor in range(2, number):
+        if number % factor == 0:
             return False
 
     return True
